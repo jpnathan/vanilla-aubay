@@ -1,0 +1,18 @@
+:root {
+  --main-bg-color: #4253ccb0;
+  --text-color-white: #fff;
+  --text-color-dark-blue: #425889;
+  --text-color-middle-blue: #445886c7;
+  --text-color-light-brown: #698AA3;
+  --text-color-briliant-blue: #0e26d1;
+  --text-color-water-blue: #00B5E9;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: sans-serif;
+}
+
+.text--white {
+  color: var(--text-color-white);
+}
