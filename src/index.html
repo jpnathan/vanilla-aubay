@@ -43,16 +43,25 @@
                 <input type="text"
                        class="login__input"
                        id="user"
-                       placeholder="USERNAME">
+                       placeholder="USERNAME"
+                       onchange="validateEmail(event.target.value)">
+                <span class="login__user--error" hidden>
+                  Wrong email! Format: email@email.com
+                </span>
               </div>
               <div>
                 <input type="password"
                        class="login__input"
                        id="password"
-                       placeholder="PASSWORD">
+                       placeholder="PASSWORD"
+                       onchange="validatePassword(event.target.value)">
+                <span class="login__password--error" hidden>
+                  Wrong password! Must contain at least 5 characters.
+                </span>
               </div>
               <button class="button text--white"
-                      type="submit">
+                      type="submit"
+                      onclick="onSubmit()">
                 Sign in
               </button>
             </form>

@@ -93,3 +93,8 @@ a:visited {
   margin-top: 1.5em;
   background-color: var(--text-color-water-blue);
 }
+
+.login__user--error, .login__password--error {
+  color: var(--text-color-dark-red);
+  font-size: 12px;
+}
