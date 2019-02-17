@@ -47,7 +47,7 @@
 }
 
 .login__main {
-  height: 11rem;
+  height: auto;
   display: flex;
   justify-content: center;
   background: var(--text-color-middle-blue);
@@ -57,8 +57,9 @@
   width: 95%;
 }
 
-.login__input::before {
+.login__input {
   padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .login__input::placeholder {
@@ -75,10 +76,8 @@
 
 .login__footer {
   font-size: 10px;
-  height: 2rem;
-  display: flex;
-  justify-content: center;
-  background: var(--text-color-middle-blue);
+  margin: 1rem 0;
+  text-align: center;
 }
 
 .login__footer__link {
@@ -106,7 +105,14 @@ a:visited {
 .button:hover {
   background-color: var(--text-color-water-blue-light);
 }
+
 .login__user--error, .login__password--error {
   color: var(--text-color-dark-red);
   font-size: 12px;
+}
+
+@media only screen and (max-width: 400px) {
+  .login__inner {
+    width: 300px;
+  }
 }

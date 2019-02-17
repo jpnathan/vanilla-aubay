@@ -1,6 +1,9 @@
 /* Using ES5 for better compatibility
 * This code could be easily wrote using ES6
 *
+* User must be a email
+* Password is free
+*
 * Developed by Phillip Freitas
 */
 
