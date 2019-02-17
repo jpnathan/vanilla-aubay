@@ -38,7 +38,7 @@
             </div>
           </div>
           <div class="login__main">
-            <form action="">
+            <form onsubmit="onSubmit()">
               <div>
                 <input type="text"
                        class="login__input"
@@ -60,7 +60,8 @@
                 </span>
               </div>
               <button class="button text--white"
-                      type="submit"
+                      id="submitButton"
+                      type="button"
                       onclick="onSubmit()">
                 Sign in
               </button>
@@ -77,6 +78,11 @@
     </div>
   </div>
 </main>
+
+<div id="toast">
+  <div id="desc"></div>
+</div>
+
 </body>
 </html>
 <script src="./js/login.js"></script>

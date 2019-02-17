@@ -6,7 +6,9 @@
   --text-color-light-brown: #698AA3;
   --text-color-briliant-blue: #0e26d1;
   --text-color-water-blue: #00B5E9;
+  --text-color-water-blue-light: #0088e9;
   --text-color-dark-red: #e90000;
+  --text-color-dark-green: #1ccb11;
 }
 
 body {
@@ -16,4 +18,45 @@ body {
 
 .text--white {
   color: var(--text-color-white);
+}
+
+#toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  color: var(--text-color-white);
+  background-color: var(--text-color-dark-red);
+  text-align: center;
+  border-radius: 5px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+}
+
+#toast.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4.8s;
+  animation: fadein 0.5s, fadeout 0.5s 4.8s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }
